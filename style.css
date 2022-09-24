@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Poppins&family=Roboto&display=swap');
+body{
+    height: 100vh;
+    background-color:rgb(229, 226, 226);
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 95%;
+}
+.navbar-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar-link li{
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+.navbar-link li:hover{
+    color: red;
+    cursor: pointer;
+    border-bottom: solid 5px red  ;
+}
+.navbar-icons{
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    color: red;
+}
+.navbar-icons span{
+    padding:10px;
+    font-size: large;
+}
+
+.shop{
+    height: 70vh;
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: row;
+}
+.category{
+    background-color: white;
+    height: 100%;
+    width: 20%;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: 12px;
+}
+.category p{
+    display: inline-block;
+    color: rgb(73, 72, 72);
+    font-weight: bolder;
+}
+.category ul span{
+    display: block;
+}
+.shop-items{
+    height: 100%;
+    width: 75%;
+}
+
+.banner , .swiper{
+    margin: 20px auto;
+    width: 100%;
+    height: 250px;
+}
+
+.banner img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.game-items{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+   grid-gap: 50px;
+
+}
+.item{
+    background-color: rgb(255, 255, 255);
+    height: 380px;
+    width: 300px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 20px;
+    padding-bottom: 20px;
+    
+}
+.item img{
+    margin: 20px;
+    height: 70%;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 4px;
+    border: solid 5px gray;
+}
+.item p{
+    color: rgb(47, 47, 47);
+    font-weight: 900;
+
+    white-space: pre-line;
+}
+
+.item button{
+    width: 40%;
+    height: 30px;
+    border-radius: 15px;
+    border-width: 0;
+    background-color: rgb(250, 47, 47);
+    font-family: 'Poppins', sans-serif;
+}
+.item-info{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+@media(max-width:575px){
+    .game-items{
+        display: inline-grid;
+        grid-template-columns: auto auto;
+    }
+    .item{
+        background-color: rgb(255, 255, 255);
+        height: 50%;
+        width: 100%;
+        margin: auto 20px;
+
+    }
+    .shop{
+        height: 70vh;
+        margin: 20px 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .category{
+        width: 100%;
+    }
+    .category ul{
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+    }
+    .category ul span{
+        display: flex;
+    }
+
+    .navbar{
+    display: block;
+    }
+    .navbar-link{
+        display: block;
+        text-align: center;
+    }
+    .navbar-icons{
+        display: block;
+        text-align: center;
+        padding: 0px;
+    }
+    .collapse{
+        max-height: 0;
+        overflow: hidden;
+    }
+    .banner{
+        max-width: 100%;
+
+    }
+
+}
+
+.toggle-button{
+    font-size: 21px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    margin: 8px 9px;
+}
